@@ -81,6 +81,10 @@ gradlePlugin {
             id = "nowinandroid.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
+        register("androidHiltWithKsp") {
+            id = "nowinandroid.android.hilt.ksp"
+            implementationClass = "AndroidHiltWithKspConventionPlugin"
+        }
         register("androidRoom") {
             id = "nowinandroid.android.room"
             implementationClass = "AndroidRoomConventionPlugin"

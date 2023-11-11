@@ -17,7 +17,7 @@
 plugins {
     alias(libs.plugins.nowinandroid.android.library)
     alias(libs.plugins.nowinandroid.android.library.jacoco)
-    alias(libs.plugins.ksp)
+    alias(libs.plugins.nowinandroid.android.hilt.ksp)
     alias(libs.plugins.protobuf)
 }
 
@@ -69,9 +69,4 @@ dependencies {
 
     testImplementation(projects.core.datastoreTest)
     testImplementation(projects.core.testing)
-
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
-    kspAndroidTest(libs.hilt.compiler)
-    kspTest(libs.hilt.compiler)
 }
